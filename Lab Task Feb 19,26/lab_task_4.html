@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab Task 04 - HTML Forms" />
+    <title>Lab Task 04 - HTML Forms</title>
+  </head>
+
+  <body>
+    <!-- Page Header -->
+    <header>
+      <h1>Lab Task 04: HTML Forms</h1>
+    </header>
+
+    <main>
+      <!-- ========================= -->
+      <!-- Form Starts Here -->
+      <!-- ========================= -->
+      <form action="#" method="post">
+        <!-- ========================= -->
+        <!-- Personal Information -->
+        <!-- ========================= -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <!-- Full Name -->
+          <p>
+            <label for="fullname">Full Name:</label><br />
+            <input type="text" id="fullname" name="fullname" required />
+          </p>
+
+          <!-- Email -->
+          <p>
+            <label for="email">Email Address:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <!-- Password -->
+          <p>
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" required />
+          </p>
+
+          <!-- Date of Birth -->
+          <p>
+            <label for="dob">Date of Birth:</label><br />
+            <input type="date" id="dob" name="dob" />
+          </p>
+
+          <!-- Gender -->
+          <p>
+            <span>Gender:</span><br />
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ========================= -->
+        <!-- Academic Information -->
+        <!-- ========================= -->
+        <fieldset>
+          <legend>Academic Information</legend>
+
+          <!-- Department Dropdown -->
+          <p>
+            <label for="department">Department:</label><br />
+            <select id="department" name="department">
+              <option value="">-- Select Department --</option>
+              <option value="cse">CSE</option>
+              <option value="eee">EEE</option>
+              <option value="bba">BBA</option>
+              <option value="english">English</option>
+            </select>
+          </p>
+
+          <!-- Skills Checkboxes -->
+          <p>
+            <span>Skills:</span><br />
+
+            <input type="checkbox" id="html" name="skills" value="html" />
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="css" />
+            <label for="css">CSS</label>
+
+            <input
+              type="checkbox"
+              id="javascript"
+              name="skills"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skills" value="python" />
+            <label for="python">Python</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ========================= -->
+        <!-- Form Controls -->
+        <!-- ========================= -->
+        <p>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </p>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        This form demonstrates proper HTML5 form structure and accessibility.
+      </p>
+    </footer>
+  </body>
+</html>

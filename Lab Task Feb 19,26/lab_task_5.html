@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ========================= -->
+    <!-- Metadata Section -->
+    <!-- ========================= -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Personal Academic Profile Page demonstrating semantic HTML5, metadata, tables, and advanced forms."
+    />
+    <meta
+      name="keywords"
+      content="HTML5, Academic Profile, Internship, Web Development, Student Portfolio"
+    />
+    <meta name="author" content="Shahriar Soumik" />
+    <title>Academic Profile - Shahriar Soumik</title>
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header>
+      <h1>Shahriar Soumik</h1>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="#biography">Biography</a> |
+        <a href="#education">Education</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- ========================= -->
+    <!-- Main Content -->
+    <!-- ========================= -->
+    <main>
+      <!-- Biography Section -->
+      <section id="biography">
+        <h2>Biography</h2>
+        <p>
+          I am a Computer Science and Engineering student passionate about
+          Artificial Intelligence and Web Development. I aim to build impactful
+          software solutions and pursue higher studies abroad.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Education Section -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <table border="1">
+          <caption>
+            Academic Qualifications
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>BSc in CSE</td>
+              <td>American International University-Bangladesh (AIUB)</td>
+              <td>2023 - Present</td>
+              <td>CGPA: 3.99</td>
+            </tr>
+
+            <tr>
+              <td>HSC</td>
+              <td>Police Lines School And College, Rangpur</td>
+              <td>2022</td>
+              <td>GPA: 5.00</td>
+            </tr>
+
+            <tr>
+              <td>SSC</td>
+              <td>Cantonment Public School And College Lalmonirhat</td>
+              <td>2019</td>
+              <td>GPA: 5.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+          <!-- Name -->
+          <p>
+            <label for="name">Full Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+              maxlength="50"
+            />
+          </p>
+
+          <!-- Email -->
+          <p>
+            <label for="email">Email Address:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+              maxlength="100"
+            />
+          </p>
+
+          <!-- Phone -->
+          <p>
+            <label for="phone">Phone Number:</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="01XXXXXXXXX"
+              pattern="[0-9]{11}"
+              title="Enter 11 digit phone number"
+              maxlength="11"
+            />
+          </p>
+
+          <!-- Message -->
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+              maxlength="300"
+              rows="5"
+              cols="40"
+            ></textarea>
+          </p>
+
+          <!-- Buttons -->
+          <p>
+            <input type="submit" value="Send Message" />
+            <input type="reset" value="Clear" />
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <footer>
+      <p>
+        Email: soumik@example.com <br />
+        © 2026 Shahriar Soumik. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

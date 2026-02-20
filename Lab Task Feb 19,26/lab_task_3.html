@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Lab Task 03 - Tables and Semantic HTML5 Elements"
+    />
+    <title>Lab Task 03 - Semantic HTML and Tables</title>
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header>
+      <h1>Lab Task 03: Tables and Semantic HTML5 Elements</h1>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Navigation Section -->
+    <!-- ========================= -->
+    <nav>
+      <a href="#home">Home</a> | <a href="#students">Student Table</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <hr />
+
+    <!-- ========================= -->
+    <!-- Main Content -->
+    <!-- ========================= -->
+    <main>
+      <!-- Section: Introduction -->
+      <section id="home">
+        <h2>Introduction</h2>
+        <p>
+          This webpage demonstrates the use of semantic HTML5 elements such as
+          header, nav, main, section, and footer. It also includes a properly
+          structured table with accessibility features.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Section: Student Table -->
+      <section id="students">
+        <h2>Student Information Table</h2>
+
+        <table border="1">
+          <caption>
+            Student Academic Records
+          </caption>
+
+          <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">CGPA</th>
+          </tr>
+
+          <tr>
+            <td>2021001</td>
+            <td>Timothy Swank</td>
+            <td>CSE</td>
+            <td>3.99</td>
+          </tr>
+
+          <tr>
+            <td>2021002</td>
+            <td>Rahim Ahmed</td>
+            <td>EEE</td>
+            <td>3.75</td>
+          </tr>
+
+          <tr>
+            <td>2021003</td>
+            <td>Nusrat Jahan</td>
+            <td>BBA</td>
+            <td>3.88</td>
+          </tr>
+
+          <tr>
+            <td>2021004</td>
+            <td>Tanvir Hasan</td>
+            <td>CSE</td>
+            <td>3.65</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <footer id="contact">
+      <h3>Contact Information</h3>
+      <p>
+        Email: student@example.com <br />
+        Phone: +880-123456789
+      </p>
+    </footer>
+
+    <!-- End of Document -->
+  </body>
+</html>
